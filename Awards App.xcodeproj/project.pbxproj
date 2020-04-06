@@ -16,6 +16,10 @@
 		114FB97D243B392E00FD9AAA /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB97B243B392E00FD9AAA /* FilterViewController.swift */; };
 		114FB97E243B392E00FD9AAA /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114FB97C243B392E00FD9AAA /* FilterViewController.xib */; };
 		114FB980243B393700FD9AAA /* FilterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB97F243B393700FD9AAA /* FilterModule.swift */; };
+		11507DE4243B3B61002C0D90 /* FilterItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11507DE2243B3B61002C0D90 /* FilterItemTableCell.swift */; };
+		11507DE5243B3B61002C0D90 /* FilterItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11507DE3243B3B61002C0D90 /* FilterItemTableCell.xib */; };
+		11507DE8243B3D35002C0D90 /* RangeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11507DE6243B3D35002C0D90 /* RangeTableCell.swift */; };
+		11507DE9243B3D35002C0D90 /* RangeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11507DE7243B3D35002C0D90 /* RangeTableCell.xib */; };
 		1161FBA9243AF61600793751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBA8243AF61600793751 /* AppDelegate.swift */; };
 		1161FBB2243AF61800793751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB1243AF61800793751 /* Assets.xcassets */; };
 		1161FBB5243AF61800793751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB3243AF61800793751 /* LaunchScreen.storyboard */; };
@@ -47,6 +51,9 @@
 		1161FC03243B221400793751 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FC02243B221400793751 /* HomeModule.swift */; };
 		1161FC07243B25F900793751 /* AwardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FC05243B25F900793751 /* AwardTableCell.swift */; };
 		1161FC08243B25F900793751 /* AwardTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1161FC06243B25F900793751 /* AwardTableCell.xib */; };
+		11CB4BF8243B400B005F4C1B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB4BF7243B400B005F4C1B /* Helper.swift */; };
+		11CB4BFB243B415A005F4C1B /* CheckListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CB4BF9243B415A005F4C1B /* CheckListTableCell.swift */; };
+		11CB4BFC243B415A005F4C1B /* CheckListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CB4BFA243B415A005F4C1B /* CheckListTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +66,10 @@
 		114FB97B243B392E00FD9AAA /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		114FB97C243B392E00FD9AAA /* FilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
 		114FB97F243B393700FD9AAA /* FilterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModule.swift; sourceTree = "<group>"; };
+		11507DE2243B3B61002C0D90 /* FilterItemTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemTableCell.swift; sourceTree = "<group>"; };
+		11507DE3243B3B61002C0D90 /* FilterItemTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterItemTableCell.xib; sourceTree = "<group>"; };
+		11507DE6243B3D35002C0D90 /* RangeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeTableCell.swift; sourceTree = "<group>"; };
+		11507DE7243B3D35002C0D90 /* RangeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RangeTableCell.xib; sourceTree = "<group>"; };
 		1161FBA5243AF61600793751 /* Awards App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awards App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1161FBA8243AF61600793751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1161FBB1243AF61800793751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +103,9 @@
 		1161FC02243B221400793751 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		1161FC05243B25F900793751 /* AwardTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTableCell.swift; sourceTree = "<group>"; };
 		1161FC06243B25F900793751 /* AwardTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AwardTableCell.xib; sourceTree = "<group>"; };
+		11CB4BF7243B400B005F4C1B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		11CB4BF9243B415A005F4C1B /* CheckListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTableCell.swift; sourceTree = "<group>"; };
+		11CB4BFA243B415A005F4C1B /* CheckListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +130,7 @@
 		114FB974243B386D00FD9AAA /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				11507DE1243B3B36002C0D90 /* Table Cells */,
 				114FB975243B38D600FD9AAA /* FilterInterfaces.swift */,
 				114FB977243B38E800FD9AAA /* FilterViewModel.swift */,
 				114FB979243B391900FD9AAA /* FilterPresenter.swift */,
@@ -124,6 +139,19 @@
 				114FB97F243B393700FD9AAA /* FilterModule.swift */,
 			);
 			path = Filter;
+			sourceTree = "<group>";
+		};
+		11507DE1243B3B36002C0D90 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11507DE2243B3B61002C0D90 /* FilterItemTableCell.swift */,
+				11507DE3243B3B61002C0D90 /* FilterItemTableCell.xib */,
+				11507DE6243B3D35002C0D90 /* RangeTableCell.swift */,
+				11507DE7243B3D35002C0D90 /* RangeTableCell.xib */,
+				11CB4BF9243B415A005F4C1B /* CheckListTableCell.swift */,
+				11CB4BFA243B415A005F4C1B /* CheckListTableCell.xib */,
+			);
+			path = "Table Cells";
 			sourceTree = "<group>";
 		};
 		1161FB9C243AF61600793751 = {
@@ -178,6 +206,7 @@
 				1161FBC4243AF93C00793751 /* Extension+UIViewController.swift */,
 				114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */,
 				114FB972243B333F00FD9AAA /* Exntension+UINavigationController.swift */,
+				11CB4BF7243B400B005F4C1B /* Helper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -299,12 +328,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11507DE9243B3D35002C0D90 /* RangeTableCell.xib in Resources */,
 				1161FBB5243AF61800793751 /* LaunchScreen.storyboard in Resources */,
+				11CB4BFC243B415A005F4C1B /* CheckListTableCell.xib in Resources */,
 				1161FC08243B25F900793751 /* AwardTableCell.xib in Resources */,
 				1161FBB2243AF61800793751 /* Assets.xcassets in Resources */,
 				1161FBF2243AFB6500793751 /* LoginViewController.xib in Resources */,
 				114FB97E243B392E00FD9AAA /* FilterViewController.xib in Resources */,
 				1161FC01243B220500793751 /* HomeViewController.xib in Resources */,
+				11507DE5243B3B61002C0D90 /* FilterItemTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,13 +371,17 @@
 				1161FBF4243AFB6E00793751 /* LoginModule.swift in Sources */,
 				1161FBCE243AF93C00793751 /* Extension+Codable.swift in Sources */,
 				114FB973243B333F00FD9AAA /* Exntension+UINavigationController.swift in Sources */,
+				11CB4BF8243B400B005F4C1B /* Helper.swift in Sources */,
 				1161FC03243B221400793751 /* HomeModule.swift in Sources */,
 				1161FBE1243AF9B800793751 /* AppRouter.swift in Sources */,
 				1161FBF9243B21E500793751 /* HomeViewModel.swift in Sources */,
 				1161FC07243B25F900793751 /* AwardTableCell.swift in Sources */,
+				11CB4BFB243B415A005F4C1B /* CheckListTableCell.swift in Sources */,
 				114FB97D243B392E00FD9AAA /* FilterViewController.swift in Sources */,
 				1161FBF7243B217200793751 /* HomeInterfaces.swift in Sources */,
+				11507DE4243B3B61002C0D90 /* FilterItemTableCell.swift in Sources */,
 				1161FBDF243AF9B800793751 /* IModule.swift in Sources */,
+				11507DE8243B3D35002C0D90 /* RangeTableCell.swift in Sources */,
 				1161FBCA243AF93C00793751 /* Extension+UITableView.swift in Sources */,
 				1161FBD1243AF93C00793751 /* Extension+UITableViewCell.swift in Sources */,
 				1161FBFB243B21F300793751 /* HomeWireframe.swift in Sources */,

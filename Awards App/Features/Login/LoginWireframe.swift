@@ -16,6 +16,6 @@ class LoginWireframe: ILoginWireframe {
     }
     
     func navigateToHome() {
-        appRouter.present(module: .home, asNavigation: false, using: [:])
+        appRouter.present(module: .home, asNavigation: true, using: [:])
     }
 }

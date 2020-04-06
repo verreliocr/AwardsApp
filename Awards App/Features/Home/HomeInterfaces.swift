@@ -19,8 +19,9 @@ protocol IHomePresenter {
     func getType(at section: Int) -> String
     func getPrice(at section: Int) -> String
     func getRewards(at section: Int) -> String
+    func navigateToFilter()
 }
 
 protocol IHomeWireframe {
-    
+    func navigateToFilter()
 }

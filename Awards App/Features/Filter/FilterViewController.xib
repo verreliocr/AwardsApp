@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterViewController" customModule="Awards_App" customModuleProvider="target">
             <connections>
+                <outlet property="closeButton" destination="WxX-R9-TZA" id="NGS-s2-aYu"/>
+                <outlet property="tableView" destination="cMW-Dq-5Ug" id="9ah-RK-dmU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,8 +22,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcl-cb-BfO">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxX-R9-TZA">
-                            <rect key="frame" x="341.5" y="13" width="17.5" height="22"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxX-R9-TZA">
+                            <rect key="frame" x="335" y="12" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Dvb-Ni-Kg1"/>
+                                <constraint firstAttribute="width" constant="24" id="TNI-dc-6dt"/>
+                            </constraints>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" image="xmark" catalog="system"/>
                         </button>
@@ -41,12 +47,20 @@
                         <constraint firstAttribute="height" constant="48" id="o3d-Oh-oaF"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cMW-Dq-5Ug">
+                    <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="Dcl-cb-BfO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H0E-qr-K8b"/>
+                <constraint firstItem="cMW-Dq-5Ug" firstAttribute="top" secondItem="Dcl-cb-BfO" secondAttribute="bottom" id="HgI-6T-8yx"/>
                 <constraint firstItem="Dcl-cb-BfO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Xy0-77-fOV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dcl-cb-BfO" secondAttribute="trailing" id="hrm-Ak-6GM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cMW-Dq-5Ug" secondAttribute="bottom" id="ruz-Xx-cBt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cMW-Dq-5Ug" secondAttribute="trailing" id="wNa-nV-rYq"/>
+                <constraint firstItem="cMW-Dq-5Ug" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yki-b6-70o"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="-50.399999999999999" y="106.59670164917542"/>

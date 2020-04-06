@@ -14,4 +14,8 @@ class HomeWireframe: IHomeWireframe {
     init(appRouter: IRouter) {
         self.appRouter = appRouter
     }
+    
+    func navigateToFilter() {
+        appRouter.push(module: .filter, using: [:])
+    }
 }

@@ -12,6 +12,7 @@ import UIKit
 enum FeatureModule {
     case login
     case home
+    case filter
     
     func create(using router: IRouter) -> IModule {
         switch self {
@@ -19,6 +20,8 @@ enum FeatureModule {
             return LoginModule(appRouter: router)
         case .home:
             return HomeModule(appRouter: router)
+        case .filter:
+            return FilterModule(appRouter: router)
         }
     }
 }

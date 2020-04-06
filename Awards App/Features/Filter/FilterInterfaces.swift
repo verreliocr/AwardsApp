@@ -15,4 +15,14 @@ protocol IFilterView: class {
 protocol IFilterPresenter {
     func setView(_ view: IFilterView)
     func viewWillAppear()
+    func getCurrentFilter() -> [String]
+    func getCurrentMaxValue() -> Float
+    func getCurrentTypes() -> String
+    func getTypes() -> [String]
+    func isTypeSelected(at index: Int) -> Bool
+    func changeMaxValue(_ value: Float)
+    func clearAllFilter()
+    func resetMaxValue()
+    func resetType()
+    func changeType(_ value: String)
 }

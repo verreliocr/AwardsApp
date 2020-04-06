@@ -9,5 +9,6 @@
 import Foundation
 
 class FilterViewModel {
-    
+    var currentMaxValue: Float = 10000
+    var currentType: String = "All"
 }

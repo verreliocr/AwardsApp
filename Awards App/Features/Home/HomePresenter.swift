@@ -43,4 +43,8 @@ class HomePresenter: IHomePresenter {
         return viewModel.data[section].reward
     }
     
+    func navigateToFilter() {
+        wireframe.navigateToFilter()
+    }
+    
 }

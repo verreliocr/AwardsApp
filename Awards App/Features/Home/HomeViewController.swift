@@ -30,11 +30,16 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.hideBarIfNecessary()
         setupTableView()
         hideSideBar()
         
         menuButton.addAction { [unowned self] in
             self.showSideBar()
+        }
+        
+        filterButton.addAction { [unowned self] in
+            self.presenter.navigateToFilter()
         }
         
         homeButton.addAction { [unowned self] in
