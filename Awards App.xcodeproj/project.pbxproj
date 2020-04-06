@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114FB96E243B26D800FD9AAA /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */; };
 		1161FBA9243AF61600793751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBA8243AF61600793751 /* AppDelegate.swift */; };
 		1161FBB2243AF61800793751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB1243AF61800793751 /* Assets.xcassets */; };
 		1161FBB5243AF61800793751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB3243AF61800793751 /* LaunchScreen.storyboard */; };
@@ -36,9 +37,12 @@
 		1161FC00243B220500793751 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBFE243B220500793751 /* HomeViewController.swift */; };
 		1161FC01243B220500793751 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBFF243B220500793751 /* HomeViewController.xib */; };
 		1161FC03243B221400793751 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FC02243B221400793751 /* HomeModule.swift */; };
+		1161FC07243B25F900793751 /* AwardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FC05243B25F900793751 /* AwardTableCell.swift */; };
+		1161FC08243B25F900793751 /* AwardTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1161FC06243B25F900793751 /* AwardTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
 		1161FBA5243AF61600793751 /* Awards App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awards App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1161FBA8243AF61600793751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1161FBB1243AF61800793751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 		1161FBFE243B220500793751 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1161FBFF243B220500793751 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		1161FC02243B221400793751 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		1161FC05243B25F900793751 /* AwardTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTableCell.swift; sourceTree = "<group>"; };
+		1161FC06243B25F900793751 /* AwardTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AwardTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 				1161FBC7243AF93C00793751 /* Extension+UITableViewCell.swift */,
 				1161FBC5243AF93C00793751 /* Extension+UIView.swift */,
 				1161FBC4243AF93C00793751 /* Extension+UIViewController.swift */,
+				114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 		1161FBF5243B0CF500793751 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1161FC04243B25E100793751 /* Table Cells */,
 				1161FBF6243B217200793751 /* HomeInterfaces.swift */,
 				1161FBF8243B21E500793751 /* HomeViewModel.swift */,
 				1161FBFA243B21F300793751 /* HomeWireframe.swift */,
@@ -182,6 +190,15 @@
 				1161FC02243B221400793751 /* HomeModule.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		1161FC04243B25E100793751 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1161FC05243B25F900793751 /* AwardTableCell.swift */,
+				1161FC06243B25F900793751 /* AwardTableCell.xib */,
+			);
+			path = "Table Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1161FBB5243AF61800793751 /* LaunchScreen.storyboard in Resources */,
+				1161FC08243B25F900793751 /* AwardTableCell.xib in Resources */,
 				1161FBB2243AF61800793751 /* Assets.xcassets in Resources */,
 				1161FBF2243AFB6500793751 /* LoginViewController.xib in Resources */,
 				1161FC01243B220500793751 /* HomeViewController.xib in Resources */,
@@ -262,6 +280,7 @@
 				1161FBD0243AF93C00793751 /* Extension+String.swift in Sources */,
 				1161FBCF243AF93C00793751 /* Extension+UIView.swift in Sources */,
 				1161FBA9243AF61600793751 /* AppDelegate.swift in Sources */,
+				114FB96E243B26D800FD9AAA /* Extension+UILabel.swift in Sources */,
 				1161FBCB243AF93C00793751 /* Extension+UIImageView.swift in Sources */,
 				1161FBCC243AF93C00793751 /* Extension+UIApplication.swift in Sources */,
 				1161FBE2243AF9B800793751 /* FeatureModule.swift in Sources */,
@@ -276,6 +295,7 @@
 				1161FC03243B221400793751 /* HomeModule.swift in Sources */,
 				1161FBE1243AF9B800793751 /* AppRouter.swift in Sources */,
 				1161FBF9243B21E500793751 /* HomeViewModel.swift in Sources */,
+				1161FC07243B25F900793751 /* AwardTableCell.swift in Sources */,
 				1161FBF7243B217200793751 /* HomeInterfaces.swift in Sources */,
 				1161FBDF243AF9B800793751 /* IModule.swift in Sources */,
 				1161FBCA243AF93C00793751 /* Extension+UITableView.swift in Sources */,

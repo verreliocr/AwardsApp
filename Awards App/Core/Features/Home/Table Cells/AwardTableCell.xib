@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="AwardTableCell" customModule="Awards_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJP-Zu-cAn">
+                        <rect key="frame" x="16" y="8" width="343" height="116.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xL-K6-jqa" customClass="EdgeInsetLabel" customModule="Awards_App" customModuleProvider="target">
+                                <rect key="frame" x="302.5" y="8" width="32.5" height="20"/>
+                                <color key="backgroundColor" red="0.142171979" green="0.34834653139999999" blue="0.96083492039999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="mYx-Qr-0K1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftTextInset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightTextInset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKK-LN-HJY">
+                                <rect key="frame" x="8" y="89" width="41.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93340247870000004" green="0.93720495699999995" blue="0.94116979840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="SKK-LN-HJY" firstAttribute="leading" secondItem="KJP-Zu-cAn" secondAttribute="leading" constant="8" id="4r3-MR-njO"/>
+                            <constraint firstAttribute="bottom" secondItem="SKK-LN-HJY" secondAttribute="bottom" constant="8" id="6T9-0o-DwH"/>
+                            <constraint firstItem="2xL-K6-jqa" firstAttribute="top" secondItem="KJP-Zu-cAn" secondAttribute="top" constant="8" id="Hzm-WL-96T"/>
+                            <constraint firstAttribute="trailing" secondItem="2xL-K6-jqa" secondAttribute="trailing" constant="8" id="KWe-d5-QA5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycc-Oj-BtX">
+                        <rect key="frame" x="16" y="132.5" width="343" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KJP-Zu-cAn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="8Jq-bC-471"/>
+                    <constraint firstAttribute="bottom" secondItem="ycc-Oj-BtX" secondAttribute="bottom" constant="8" id="Orn-uk-4cZ"/>
+                    <constraint firstAttribute="trailing" secondItem="KJP-Zu-cAn" secondAttribute="trailing" constant="16" id="UVU-mI-oCT"/>
+                    <constraint firstItem="KJP-Zu-cAn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ZEF-sZ-I7S"/>
+                    <constraint firstItem="ycc-Oj-BtX" firstAttribute="top" secondItem="KJP-Zu-cAn" secondAttribute="bottom" constant="8" id="hf0-dk-koo"/>
+                    <constraint firstAttribute="trailing" secondItem="ycc-Oj-BtX" secondAttribute="trailing" constant="16" id="lut-cW-TDy"/>
+                    <constraint firstItem="ycc-Oj-BtX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="t4n-Ok-GSs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backGroundView" destination="KJP-Zu-cAn" id="PX3-5L-TFf"/>
+                <outlet property="priceLabel" destination="SKK-LN-HJY" id="2e6-hY-XVe"/>
+                <outlet property="rewardLabel" destination="ycc-Oj-BtX" id="NJr-VK-r5w"/>
+                <outlet property="typeLabel" destination="2xL-K6-jqa" id="JwN-z8-Png"/>
+            </connections>
+            <point key="canvasLocation" x="-50.000000000000007" y="105.80357142857143"/>
+        </tableViewCell>
+    </objects>
+</document>
