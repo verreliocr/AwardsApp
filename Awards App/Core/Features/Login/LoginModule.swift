@@ -7,3 +7,21 @@
 //
 
 import Foundation
+import UIKit
+
+class LoginModule: IModule {
+    var router: IRouter
+    
+    init(appRouter: IRouter) {
+        self.router = appRouter
+    }
+    
+    func resolve(using params: [String : Any]) -> UIViewController {
+        let viewModel = LoginViewModel()
+        let wireframe = LoginWireframe(appRouter: router)
+        let presenter = LoginPresenter(viewModel: viewModel, wireframe: wireframe)
+        let view = LoginViewController(presenter: presenter)
+        presenter.setView(view)
+        return view
+    }
+}

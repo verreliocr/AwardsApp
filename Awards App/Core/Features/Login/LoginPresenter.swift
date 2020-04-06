@@ -7,3 +7,28 @@
 //
 
 import Foundation
+
+class LoginPresenter: ILoginPresenter {
+    
+    weak var view: ILoginView?
+    let viewModel: LoginViewModel
+    let wireframe: ILoginWireframe
+    
+    init(viewModel: LoginViewModel, wireframe: ILoginWireframe) {
+        self.viewModel = viewModel
+        self.wireframe = wireframe
+    }
+    
+    func setView(_ view: ILoginView) {
+        self.view = view
+    }
+    
+    func viewWillAppear() {
+        
+    }
+    
+    func didLogin(with email: String) {
+        
+    }
+    
+}

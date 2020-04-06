@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class LoginWireframe: ILoginWireframe {
+    let appRouter: IRouter
+    
+    init(appRouter: IRouter) {
+        self.appRouter = appRouter
+    }
+}

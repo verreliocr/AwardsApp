@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+protocol ILoginView: class {
+    func reloadView()
+    func showLoading(_ show: Bool)
+}
+
+protocol ILoginPresenter {
+    func setView(_ view: ILoginView)
+    func viewWillAppear()
+    func didLogin(with email: String)
+}
+
+protocol ILoginWireframe {
+    
+}
