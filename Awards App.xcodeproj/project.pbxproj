@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1161FBA9243AF61600793751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBA8243AF61600793751 /* AppDelegate.swift */; };
-		1161FBAB243AF61600793751 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBAA243AF61600793751 /* SceneDelegate.swift */; };
-		1161FBAD243AF61600793751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBAC243AF61600793751 /* ViewController.swift */; };
-		1161FBB0243AF61600793751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBAE243AF61600793751 /* Main.storyboard */; };
 		1161FBB2243AF61800793751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB1243AF61800793751 /* Assets.xcassets */; };
 		1161FBB5243AF61800793751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB3243AF61800793751 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +15,6 @@
 /* Begin PBXFileReference section */
 		1161FBA5243AF61600793751 /* Awards App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awards App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1161FBA8243AF61600793751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1161FBAA243AF61600793751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1161FBAC243AF61600793751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1161FBAF243AF61600793751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1161FBB1243AF61800793751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1161FBB4243AF61800793751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1161FBB6243AF61800793751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +50,20 @@
 		1161FBA7243AF61600793751 /* Awards App */ = {
 			isa = PBXGroup;
 			children = (
+				1161FBBC243AF79B00793751 /* Core */,
 				1161FBA8243AF61600793751 /* AppDelegate.swift */,
-				1161FBAA243AF61600793751 /* SceneDelegate.swift */,
-				1161FBAC243AF61600793751 /* ViewController.swift */,
-				1161FBAE243AF61600793751 /* Main.storyboard */,
 				1161FBB1243AF61800793751 /* Assets.xcassets */,
 				1161FBB3243AF61800793751 /* LaunchScreen.storyboard */,
 				1161FBB6243AF61800793751 /* Info.plist */,
 			);
 			path = "Awards App";
+			sourceTree = "<group>";
+		};
+		1161FBBC243AF79B00793751 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +126,6 @@
 			files = (
 				1161FBB5243AF61800793751 /* LaunchScreen.storyboard in Resources */,
 				1161FBB2243AF61800793751 /* Assets.xcassets in Resources */,
-				1161FBB0243AF61600793751 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +136,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1161FBAD243AF61600793751 /* ViewController.swift in Sources */,
 				1161FBA9243AF61600793751 /* AppDelegate.swift in Sources */,
-				1161FBAB243AF61600793751 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1161FBAE243AF61600793751 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1161FBAF243AF61600793751 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1161FBB3243AF61800793751 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,11 +275,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6MERJ8ZW37;
 				INFOPLIST_FILE = "Awards App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.Awards-App";
+				PRODUCT_BUNDLE_IDENTIFIER = personal.awards.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,11 +294,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6MERJ8ZW37;
 				INFOPLIST_FILE = "Awards App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.Awards-App";
+				PRODUCT_BUNDLE_IDENTIFIER = personal.awards.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
