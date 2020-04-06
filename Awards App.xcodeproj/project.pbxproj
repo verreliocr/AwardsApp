@@ -29,6 +29,13 @@
 		1161FBF1243AFB6500793751 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBEF243AFB6500793751 /* LoginViewController.swift */; };
 		1161FBF2243AFB6500793751 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBF0243AFB6500793751 /* LoginViewController.xib */; };
 		1161FBF4243AFB6E00793751 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBF3243AFB6E00793751 /* LoginModule.swift */; };
+		1161FBF7243B217200793751 /* HomeInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBF6243B217200793751 /* HomeInterfaces.swift */; };
+		1161FBF9243B21E500793751 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBF8243B21E500793751 /* HomeViewModel.swift */; };
+		1161FBFB243B21F300793751 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBFA243B21F300793751 /* HomeWireframe.swift */; };
+		1161FBFD243B21FD00793751 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBFC243B21FD00793751 /* HomePresenter.swift */; };
+		1161FC00243B220500793751 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBFE243B220500793751 /* HomeViewController.swift */; };
+		1161FC01243B220500793751 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBFF243B220500793751 /* HomeViewController.xib */; };
+		1161FC03243B221400793751 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FC02243B221400793751 /* HomeModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +63,13 @@
 		1161FBEF243AFB6500793751 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1161FBF0243AFB6500793751 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		1161FBF3243AFB6E00793751 /* LoginModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
+		1161FBF6243B217200793751 /* HomeInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaces.swift; sourceTree = "<group>"; };
+		1161FBF8243B21E500793751 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1161FBFA243B21F300793751 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		1161FBFC243B21FD00793751 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1161FBFE243B220500793751 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1161FBFF243B220500793751 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1161FC02243B221400793751 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1161FBE4243AFA1A00793751 /* Login */,
+				1161FBF5243B0CF500793751 /* Home */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -153,6 +168,20 @@
 				1161FBF3243AFB6E00793751 /* LoginModule.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		1161FBF5243B0CF500793751 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1161FBF6243B217200793751 /* HomeInterfaces.swift */,
+				1161FBF8243B21E500793751 /* HomeViewModel.swift */,
+				1161FBFA243B21F300793751 /* HomeWireframe.swift */,
+				1161FBFC243B21FD00793751 /* HomePresenter.swift */,
+				1161FBFE243B220500793751 /* HomeViewController.swift */,
+				1161FBFF243B220500793751 /* HomeViewController.xib */,
+				1161FC02243B221400793751 /* HomeModule.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +245,7 @@
 				1161FBB5243AF61800793751 /* LaunchScreen.storyboard in Resources */,
 				1161FBB2243AF61800793751 /* Assets.xcassets in Resources */,
 				1161FBF2243AFB6500793751 /* LoginViewController.xib in Resources */,
+				1161FC01243B220500793751 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +258,7 @@
 			files = (
 				1161FBF1243AFB6500793751 /* LoginViewController.swift in Sources */,
 				1161FBE0243AF9B800793751 /* IRouter.swift in Sources */,
+				1161FBFD243B21FD00793751 /* HomePresenter.swift in Sources */,
 				1161FBD0243AF93C00793751 /* Extension+String.swift in Sources */,
 				1161FBCF243AF93C00793751 /* Extension+UIView.swift in Sources */,
 				1161FBA9243AF61600793751 /* AppDelegate.swift in Sources */,
@@ -236,15 +267,20 @@
 				1161FBE2243AF9B800793751 /* FeatureModule.swift in Sources */,
 				1161FBE8243AFB2300793751 /* LoginInterfaces.swift in Sources */,
 				1161FBEA243AFB3C00793751 /* LoginViewModel.swift in Sources */,
+				1161FC00243B220500793751 /* HomeViewController.swift in Sources */,
 				1161FBEE243AFB5A00793751 /* LoginPresenter.swift in Sources */,
 				1161FBCD243AF93C00793751 /* Extension+UIViewController.swift in Sources */,
 				1161FBEC243AFB4500793751 /* LoginWireframe.swift in Sources */,
 				1161FBF4243AFB6E00793751 /* LoginModule.swift in Sources */,
 				1161FBCE243AF93C00793751 /* Extension+Codable.swift in Sources */,
+				1161FC03243B221400793751 /* HomeModule.swift in Sources */,
 				1161FBE1243AF9B800793751 /* AppRouter.swift in Sources */,
+				1161FBF9243B21E500793751 /* HomeViewModel.swift in Sources */,
+				1161FBF7243B217200793751 /* HomeInterfaces.swift in Sources */,
 				1161FBDF243AF9B800793751 /* IModule.swift in Sources */,
 				1161FBCA243AF93C00793751 /* Extension+UITableView.swift in Sources */,
 				1161FBD1243AF93C00793751 /* Extension+UITableViewCell.swift in Sources */,
+				1161FBFB243B21F300793751 /* HomeWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
