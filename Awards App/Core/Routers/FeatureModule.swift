@@ -10,9 +10,12 @@ import Foundation
 import UIKit
 
 enum FeatureModule {
+    case login
     
     func create(using router: IRouter) -> IModule {
         switch self {
+        case .login:
+            return LoginModule(appRouter: router)
         }
     }
 }
