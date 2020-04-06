@@ -17,7 +17,7 @@ class AwardTableCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backGroundView.applySketchShadow(color: .black, alpha: 0.15, x: 0, y: 2, blur: 116, spread: 0)
+        backGroundView.applySketchShadow(color: .black, alpha: 0.15, x: 3, y: 8, blur: 18, spread: 0)
     }
     
     func bind(type: String, price: String, reward: String) {

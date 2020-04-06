@@ -29,7 +29,7 @@ class LoginPresenter: ILoginPresenter {
     
     func didLogin(with email: String) {
         if email == viewModel.email {
-            
+            wireframe.navigateToHome()
         }else if !email.contains("@") || !email.contains(".") {
             self.view?.didShowInfo(true, with: "Wrong email format")
         }else{

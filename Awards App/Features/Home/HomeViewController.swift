@@ -12,6 +12,12 @@ class HomeViewController: UIViewController {
     
     let presenter: IHomePresenter
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var constSideBarViewTrailing: NSLayoutConstraint!
+    @IBOutlet weak var sideBarBackView: UIView!
+    @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var filterButton: UIButton!
     
     init(presenter: IHomePresenter) {
         self.presenter = presenter
@@ -24,8 +30,24 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavBar()
         setupTableView()
+        hideSideBar()
+        
+        menuButton.addAction { [unowned self] in
+            self.showSideBar()
+        }
+        
+        homeButton.addAction { [unowned self] in
+            self.hideSideBar()
+        }
+        
+        logoutButton.addAction { [unowned self] in
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+        sideBarBackView.addAction { [unowned self] in
+            self.hideSideBar()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,12 +61,20 @@ class HomeViewController: UIViewController {
         self.tableView.register([AwardTableCell.self])
     }
     
-    func setupNavBar() {
-        self.title = "Awards"
-        let leftBar = UIBarButtonItem(image: #imageLiteral(resourceName: "justification"), style: .plain, target: self, action: nil)
-        self.navigationItem.leftBarButtonItem = leftBar
-        let rightBar = UIBarButtonItem(image: #imageLiteral(resourceName: "justification"), style: .plain, target: self, action: nil)
-        self.navigationItem.rightBarButtonItem = rightBar
+    @objc func showSideBar() {
+        UIView.animate(withDuration: 0.3, animations: { [unowned self] in
+            self.constSideBarViewTrailing.constant = 111
+            self.sideBarBackView.alpha = 1
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    func hideSideBar() {
+        UIView.animate(withDuration: 0.3, animations: { [unowned self] in
+            self.constSideBarViewTrailing.constant = UIScreen.main.bounds.width
+            self.sideBarBackView.alpha = 0
+            self.view.layoutIfNeeded()
+        })
     }
 
 }

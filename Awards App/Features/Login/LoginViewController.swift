@@ -26,6 +26,8 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.hideBarIfNecessary()
+        loginTextField.becomeFirstResponder()
         signInButton.applySketchShadow(color: .black, alpha: 0.15, x: 0, y: 2, blur: 116, spread: 0)
         signInButton.addAction { [unowned self] in
             self.presenter.didLogin(with: self.loginTextField.text ?? "")

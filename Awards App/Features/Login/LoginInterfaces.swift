@@ -19,5 +19,5 @@ protocol ILoginPresenter {
 }
 
 protocol ILoginWireframe {
-    
+    func navigateToHome()
 }

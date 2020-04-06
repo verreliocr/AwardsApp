@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		114FB96E243B26D800FD9AAA /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */; };
 		114FB971243B290200FD9AAA /* RewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB970243B290200FD9AAA /* RewardModel.swift */; };
+		114FB973243B333F00FD9AAA /* Exntension+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB972243B333F00FD9AAA /* Exntension+UINavigationController.swift */; };
 		1161FBA9243AF61600793751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBA8243AF61600793751 /* AppDelegate.swift */; };
 		1161FBB2243AF61800793751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB1243AF61800793751 /* Assets.xcassets */; };
 		1161FBB5243AF61800793751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB3243AF61800793751 /* LaunchScreen.storyboard */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
 		114FB970243B290200FD9AAA /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardModel.swift; sourceTree = "<group>"; };
+		114FB972243B333F00FD9AAA /* Exntension+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exntension+UINavigationController.swift"; sourceTree = "<group>"; };
 		1161FBA5243AF61600793751 /* Awards App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awards App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1161FBA8243AF61600793751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1161FBB1243AF61800793751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				1161FBC5243AF93C00793751 /* Extension+UIView.swift */,
 				1161FBC4243AF93C00793751 /* Extension+UIViewController.swift */,
 				114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */,
+				114FB972243B333F00FD9AAA /* Exntension+UINavigationController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				1161FBEC243AFB4500793751 /* LoginWireframe.swift in Sources */,
 				1161FBF4243AFB6E00793751 /* LoginModule.swift in Sources */,
 				1161FBCE243AF93C00793751 /* Extension+Codable.swift in Sources */,
+				114FB973243B333F00FD9AAA /* Exntension+UINavigationController.swift in Sources */,
 				1161FC03243B221400793751 /* HomeModule.swift in Sources */,
 				1161FBE1243AF9B800793751 /* AppRouter.swift in Sources */,
 				1161FBF9243B21E500793751 /* HomeViewModel.swift in Sources */,
