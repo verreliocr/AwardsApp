@@ -9,6 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Awards_App" customModuleProvider="target">
             <connections>
+                <outlet property="alertLabel" destination="5bN-Qa-xW1" id="5v5-sE-caL"/>
+                <outlet property="loginTextField" destination="lzN-pW-uXD" id="wrA-qQ-4tq"/>
+                <outlet property="signInButton" destination="0pO-7q-7PH" id="Coi-af-EEX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,7 +42,10 @@
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lzN-pW-uXD">
                     <rect key="frame" x="40" y="337.5" width="295" height="34"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="continue"/>
+                    <connections>
+                        <action selector="didSelectAction:" destination="-1" eventType="primaryActionTriggered" id="RXc-oY-4dt"/>
+                    </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pO-7q-7PH">
                     <rect key="frame" x="127.5" y="395.5" width="120" height="40"/>
@@ -58,13 +64,21 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bN-Qa-xW1">
+                    <rect key="frame" x="306.5" y="375.5" width="28.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DLS-fw-FbT" secondAttribute="trailing" constant="40" id="5wk-Tu-yNt"/>
+                <constraint firstItem="5bN-Qa-xW1" firstAttribute="trailing" secondItem="lzN-pW-uXD" secondAttribute="trailing" id="IEm-XV-smI"/>
                 <constraint firstItem="q4w-uK-roj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="JUK-U3-GPy"/>
                 <constraint firstItem="DLS-fw-FbT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="S4c-bT-u36"/>
                 <constraint firstItem="0pO-7q-7PH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SgA-ag-Cfi"/>
+                <constraint firstItem="5bN-Qa-xW1" firstAttribute="top" secondItem="lzN-pW-uXD" secondAttribute="bottom" constant="4" id="SvG-QH-jP5"/>
                 <constraint firstItem="q4w-uK-roj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bdK-ZG-gcO"/>
                 <constraint firstItem="lzN-pW-uXD" firstAttribute="top" secondItem="DLS-fw-FbT" secondAttribute="bottom" constant="24" id="gGd-39-Zkc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lzN-pW-uXD" secondAttribute="trailing" constant="40" id="geM-Ly-Lpl"/>

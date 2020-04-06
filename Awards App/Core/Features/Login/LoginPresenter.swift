@@ -28,7 +28,13 @@ class LoginPresenter: ILoginPresenter {
     }
     
     func didLogin(with email: String) {
-        
+        if email == viewModel.email {
+            
+        }else if !email.contains("@") || !email.contains(".") {
+            self.view?.didShowInfo(true, with: "Wrong email format")
+        }else{
+            self.view?.didShowInfo(true, with: "Email not found")
+        }
     }
     
 }

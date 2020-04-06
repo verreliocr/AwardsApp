@@ -9,8 +9,7 @@
 import Foundation
 
 protocol ILoginView: class {
-    func reloadView()
-    func showLoading(_ show: Bool)
+    func didShowInfo(_ value: Bool, with caption: String)
 }
 
 protocol ILoginPresenter {

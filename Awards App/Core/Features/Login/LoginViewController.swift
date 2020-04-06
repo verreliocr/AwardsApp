@@ -11,6 +11,9 @@ import UIKit
 class LoginViewController: UIViewController {
     
     let presenter: ILoginPresenter
+    @IBOutlet weak var loginTextField: UITextField!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var alertLabel: UILabel!
     
     init(presenter: ILoginPresenter) {
         self.presenter = presenter
@@ -23,16 +26,27 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        signInButton.applySketchShadow(color: .black, alpha: 0.15, x: 0, y: 2, blur: 116, spread: 0)
+        signInButton.addAction { [unowned self] in
+            self.presenter.didLogin(with: self.loginTextField.text ?? "")
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.viewWillAppear()
     }
 
+    @IBAction func didSelectAction(_ sender: UITextField) {
+        self.view.endEditing(true)
+        self.presenter.didLogin(with: self.loginTextField.text ?? "")
+    }
+    
 }
 
 extension LoginViewController: ILoginView {
-    func reloadView() {
-        
-    }
-    
-    func showLoading(_ show: Bool) {
-        
+    func didShowInfo(_ value: Bool, with caption: String) {
+        alertLabel.isHidden = !value
+        alertLabel.text = caption
     }
 }

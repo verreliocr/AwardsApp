@@ -9,5 +9,5 @@
 import Foundation
 
 class LoginViewModel {
-    var email: String = ""
+    let email: String = "test@gmail.com"
 }
