@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		114FB96E243B26D800FD9AAA /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */; };
+		114FB971243B290200FD9AAA /* RewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB970243B290200FD9AAA /* RewardModel.swift */; };
 		1161FBA9243AF61600793751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBA8243AF61600793751 /* AppDelegate.swift */; };
 		1161FBB2243AF61800793751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB1243AF61800793751 /* Assets.xcassets */; };
 		1161FBB5243AF61800793751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB3243AF61800793751 /* LaunchScreen.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
+		114FB970243B290200FD9AAA /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardModel.swift; sourceTree = "<group>"; };
 		1161FBA5243AF61600793751 /* Awards App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awards App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1161FBA8243AF61600793751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1161FBB1243AF61800793751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114FB96F243B28F300FD9AAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				114FB970243B290200FD9AAA /* RewardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1161FB9C243AF61600793751 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				1161FBBC243AF79B00793751 /* Core */,
+				114FB96F243B28F300FD9AAA /* Model */,
+				1161FBE3243AF9E600793751 /* Features */,
 				1161FBA8243AF61600793751 /* AppDelegate.swift */,
 				1161FBB1243AF61800793751 /* Assets.xcassets */,
 				1161FBB3243AF61800793751 /* LaunchScreen.storyboard */,
@@ -122,7 +134,6 @@
 			children = (
 				1161FBD2243AF94F00793751 /* Routers */,
 				1161FBC1243AF92C00793751 /* Extensions */,
-				1161FBE3243AF9E600793751 /* Features */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -276,6 +287,7 @@
 			files = (
 				1161FBF1243AFB6500793751 /* LoginViewController.swift in Sources */,
 				1161FBE0243AF9B800793751 /* IRouter.swift in Sources */,
+				114FB971243B290200FD9AAA /* RewardModel.swift in Sources */,
 				1161FBFD243B21FD00793751 /* HomePresenter.swift in Sources */,
 				1161FBD0243AF93C00793751 /* Extension+String.swift in Sources */,
 				1161FBCF243AF93C00793751 /* Extension+UIView.swift in Sources */,

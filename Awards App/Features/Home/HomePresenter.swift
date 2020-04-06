@@ -24,7 +24,23 @@ class HomePresenter: IHomePresenter {
     }
     
     func viewWillAppear() {
-        
+        self.view?.reloadView()
+    }
+    
+    func getDataCount() -> Int {
+        viewModel.data.count
+    }
+    
+    func getType(at section: Int) -> String {
+        return viewModel.data[section].type
+    }
+    
+    func getPrice(at section: Int) -> String {
+        return "\(viewModel.data[section].price) Poin"
+    }
+    
+    func getRewards(at section: Int) -> String {
+        return viewModel.data[section].reward
     }
     
 }

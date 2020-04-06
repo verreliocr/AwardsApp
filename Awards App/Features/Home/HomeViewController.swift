@@ -28,6 +28,11 @@ class HomeViewController: UIViewController {
         setupTableView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.viewWillAppear()
+    }
+    
     private func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -58,10 +63,20 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return presenter.getDataCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell: AwardTableCell = tableView.dequeueReusableCell() {
+            cell.bind(type: presenter.getType(at: indexPath.row),
+                      price: presenter.getPrice(at: indexPath.row),
+                      reward: presenter.getRewards(at: indexPath.row))
+            return cell
+        }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
     }
 }

@@ -21,6 +21,9 @@ class AwardTableCell: UITableViewCell {
     }
     
     func bind(type: String, price: String, reward: String) {
+        
+        typeLabel.backgroundColor = type == "Voucher" ? #colorLiteral(red: 0, green: 0.3541563749, blue: 0.9975861907, alpha: 1) : #colorLiteral(red: 0.8645781875, green: 0.3807055354, blue: 0.1469473243, alpha: 1)
+        
         typeLabel.text = type
         priceLabel.text = price
         rewardLabel.text = reward

@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  RewardModel.swift
 //  Awards App
 //
 //  Created by Verrelio C. Rizky on 06/04/20.
@@ -8,5 +8,8 @@
 
 import Foundation
 
-class HomeViewModel {
+struct RewardModel: Codable {
+    var type: String
+    var price: Int
+    var reward: String
 }
