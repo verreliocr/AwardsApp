@@ -10,6 +10,12 @@
 		114FB96E243B26D800FD9AAA /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */; };
 		114FB971243B290200FD9AAA /* RewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB970243B290200FD9AAA /* RewardModel.swift */; };
 		114FB973243B333F00FD9AAA /* Exntension+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB972243B333F00FD9AAA /* Exntension+UINavigationController.swift */; };
+		114FB976243B38D600FD9AAA /* FilterInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB975243B38D600FD9AAA /* FilterInterfaces.swift */; };
+		114FB978243B38E800FD9AAA /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB977243B38E800FD9AAA /* FilterViewModel.swift */; };
+		114FB97A243B391900FD9AAA /* FilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB979243B391900FD9AAA /* FilterPresenter.swift */; };
+		114FB97D243B392E00FD9AAA /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB97B243B392E00FD9AAA /* FilterViewController.swift */; };
+		114FB97E243B392E00FD9AAA /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114FB97C243B392E00FD9AAA /* FilterViewController.xib */; };
+		114FB980243B393700FD9AAA /* FilterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FB97F243B393700FD9AAA /* FilterModule.swift */; };
 		1161FBA9243AF61600793751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1161FBA8243AF61600793751 /* AppDelegate.swift */; };
 		1161FBB2243AF61800793751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB1243AF61800793751 /* Assets.xcassets */; };
 		1161FBB5243AF61800793751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1161FBB3243AF61800793751 /* LaunchScreen.storyboard */; };
@@ -47,6 +53,12 @@
 		114FB96D243B26D800FD9AAA /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
 		114FB970243B290200FD9AAA /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardModel.swift; sourceTree = "<group>"; };
 		114FB972243B333F00FD9AAA /* Exntension+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exntension+UINavigationController.swift"; sourceTree = "<group>"; };
+		114FB975243B38D600FD9AAA /* FilterInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInterfaces.swift; sourceTree = "<group>"; };
+		114FB977243B38E800FD9AAA /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		114FB979243B391900FD9AAA /* FilterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPresenter.swift; sourceTree = "<group>"; };
+		114FB97B243B392E00FD9AAA /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		114FB97C243B392E00FD9AAA /* FilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		114FB97F243B393700FD9AAA /* FilterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModule.swift; sourceTree = "<group>"; };
 		1161FBA5243AF61600793751 /* Awards App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awards App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1161FBA8243AF61600793751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1161FBB1243AF61800793751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +111,19 @@
 				114FB970243B290200FD9AAA /* RewardModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		114FB974243B386D00FD9AAA /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				114FB975243B38D600FD9AAA /* FilterInterfaces.swift */,
+				114FB977243B38E800FD9AAA /* FilterViewModel.swift */,
+				114FB979243B391900FD9AAA /* FilterPresenter.swift */,
+				114FB97B243B392E00FD9AAA /* FilterViewController.swift */,
+				114FB97C243B392E00FD9AAA /* FilterViewController.xib */,
+				114FB97F243B393700FD9AAA /* FilterModule.swift */,
+			);
+			path = Filter;
 			sourceTree = "<group>";
 		};
 		1161FB9C243AF61600793751 = {
@@ -173,6 +198,7 @@
 			children = (
 				1161FBE4243AFA1A00793751 /* Login */,
 				1161FBF5243B0CF500793751 /* Home */,
+				114FB974243B386D00FD9AAA /* Filter */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -277,6 +303,7 @@
 				1161FC08243B25F900793751 /* AwardTableCell.xib in Resources */,
 				1161FBB2243AF61800793751 /* Assets.xcassets in Resources */,
 				1161FBF2243AFB6500793751 /* LoginViewController.xib in Resources */,
+				114FB97E243B392E00FD9AAA /* FilterViewController.xib in Resources */,
 				1161FC01243B220500793751 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,11 +322,15 @@
 				1161FBD0243AF93C00793751 /* Extension+String.swift in Sources */,
 				1161FBCF243AF93C00793751 /* Extension+UIView.swift in Sources */,
 				1161FBA9243AF61600793751 /* AppDelegate.swift in Sources */,
+				114FB976243B38D600FD9AAA /* FilterInterfaces.swift in Sources */,
+				114FB978243B38E800FD9AAA /* FilterViewModel.swift in Sources */,
 				114FB96E243B26D800FD9AAA /* Extension+UILabel.swift in Sources */,
 				1161FBCB243AF93C00793751 /* Extension+UIImageView.swift in Sources */,
 				1161FBCC243AF93C00793751 /* Extension+UIApplication.swift in Sources */,
 				1161FBE2243AF9B800793751 /* FeatureModule.swift in Sources */,
 				1161FBE8243AFB2300793751 /* LoginInterfaces.swift in Sources */,
+				114FB97A243B391900FD9AAA /* FilterPresenter.swift in Sources */,
+				114FB980243B393700FD9AAA /* FilterModule.swift in Sources */,
 				1161FBEA243AFB3C00793751 /* LoginViewModel.swift in Sources */,
 				1161FC00243B220500793751 /* HomeViewController.swift in Sources */,
 				1161FBEE243AFB5A00793751 /* LoginPresenter.swift in Sources */,
@@ -312,6 +343,7 @@
 				1161FBE1243AF9B800793751 /* AppRouter.swift in Sources */,
 				1161FBF9243B21E500793751 /* HomeViewModel.swift in Sources */,
 				1161FC07243B25F900793751 /* AwardTableCell.swift in Sources */,
+				114FB97D243B392E00FD9AAA /* FilterViewController.swift in Sources */,
 				1161FBF7243B217200793751 /* HomeInterfaces.swift in Sources */,
 				1161FBDF243AF9B800793751 /* IModule.swift in Sources */,
 				1161FBCA243AF93C00793751 /* Extension+UITableView.swift in Sources */,
