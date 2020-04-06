@@ -13,6 +13,7 @@ class FilterViewController: UIViewController {
     let presenter: IFilterPresenter
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var filterButton: UIButton!
     
     init(presenter: IFilterPresenter) {
         self.presenter = presenter
@@ -28,6 +29,10 @@ class FilterViewController: UIViewController {
         navigationController?.hideBarIfNecessary()
         setupTableView()
         closeButton.addAction { [unowned self] in
+            self.navigationController?.popViewController(animated: true)
+        }
+        
+        filterButton.addAction { [unowned self] in
             self.navigationController?.popViewController(animated: true)
         }
     }

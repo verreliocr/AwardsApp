@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterViewController" customModule="Awards_App" customModuleProvider="target">
             <connections>
                 <outlet property="closeButton" destination="WxX-R9-TZA" id="NGS-s2-aYu"/>
+                <outlet property="filterButton" destination="nm4-9p-mXH" id="y5f-pt-oS2"/>
                 <outlet property="tableView" destination="cMW-Dq-5Ug" id="9ah-RK-dmU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -51,15 +52,34 @@
                     <rect key="frame" x="0.0" y="48" width="375" height="619"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nm4-9p-mXH">
+                    <rect key="frame" x="24" y="603" width="327" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="pez-uX-h0E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <state key="normal" title="Filter">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nm4-9p-mXH" secondAttribute="trailing" constant="24" id="4LR-up-13F"/>
                 <constraint firstItem="Dcl-cb-BfO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H0E-qr-K8b"/>
                 <constraint firstItem="cMW-Dq-5Ug" firstAttribute="top" secondItem="Dcl-cb-BfO" secondAttribute="bottom" id="HgI-6T-8yx"/>
                 <constraint firstItem="Dcl-cb-BfO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Xy0-77-fOV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dcl-cb-BfO" secondAttribute="trailing" id="hrm-Ak-6GM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cMW-Dq-5Ug" secondAttribute="bottom" id="ruz-Xx-cBt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cMW-Dq-5Ug" secondAttribute="trailing" id="wNa-nV-rYq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nm4-9p-mXH" secondAttribute="bottom" constant="24" id="xZr-Mf-8N8"/>
+                <constraint firstItem="nm4-9p-mXH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="xzw-SB-hxx"/>
                 <constraint firstItem="cMW-Dq-5Ug" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yki-b6-70o"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
